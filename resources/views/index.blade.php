@@ -3,8 +3,9 @@
 <!-- Begin page content -->
 <main class="flex-shrink-0">
   <div class="container">
-    <h1 class="mt-5">Sticky footer with fixed navbar</h1>
-    <p class="lead">Pin a footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code class="small">padding-top: 60px;</code> on the <code class="small">main &gt; .container</code>.</p>
+    <h1 class="mt-5">¡Bienvenido Miquel!</h1>
+    <p class="lead">Hola, ¿que tal, como estas? Espero que bien, por que viendo este trabajo seguro que es asi.</p>
+    <img src="10.jpg">
   </div>
 </main>
 
