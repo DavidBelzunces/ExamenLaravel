@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ViewController;
+use App\Mail\Maileable;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +19,6 @@ Route::get('/', [ViewController::class, 'index'])->name('index');
 Route::get('/Migraciones', [ViewController::class, 'migraciones'])->name('migraciones');
 Route::get('/Seeders', [ViewController::class, 'seeders'])->name('seeders');
 Route::get('/Mail', [ViewController::class, 'mail'])->name('mail');
+Route::post('mail', 'MailController@store')->name('enviado');
+
 
