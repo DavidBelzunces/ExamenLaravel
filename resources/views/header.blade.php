@@ -17,7 +17,7 @@
                 <a class="nav-link" href="Migraciones">Migraciones</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Seeders</a>
+                <a class="nav-link" href="Seeders">Seeders</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Mail</a>
