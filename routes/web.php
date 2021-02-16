@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [ViewController::class, 'index'])->name('index');
+Route::get('/Migraciones', [ViewController::class, 'migraciones'])->name('migraciones');
+Route::get('/Seeders', [ViewController::class, 'seeders'])->name('seeders');
+Route::get('/Mail', [ViewController::class, 'mail'])->name('mail');
+
