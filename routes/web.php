@@ -18,7 +18,11 @@ use App\Mail\Maileable;
 Route::get('/', [ViewController::class, 'index'])->name('index');
 Route::get('/Migraciones', [ViewController::class, 'migraciones'])->name('migraciones');
 Route::get('/Seeders', [ViewController::class, 'seeders'])->name('seeders');
-Route::get('/Mail', [ViewController::class, 'mail'])->name('mail');
+Route::get('/Mail', function(){
+    $mensaje2 = new Maileable;
+    Mail::to('mmuntaner@iessonferrer.net')->send($mensaje2);
+
+})->name('mail');
 Route::post('mail', 'MailController@store')->name('enviado');
 
 

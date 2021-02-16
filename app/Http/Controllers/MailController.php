@@ -11,12 +11,13 @@ class MailController extends Controller
     public function store(Request $request){
        $mensaje = request()->validate([
             'nombre'=> 'required',
-            'email'=> 'required|email',
+            'email'=> 'required',
             'titulo'=> 'required',
-            'contenido'=> 'required|min:3'
+            'contenido'=> 'required'
         ]);
 
-        Mail::to('mmuntaner@iessonferrer.net')->send(new Maileable($mensaje));
+        $mensaje2 = new Maileable;
+        Mail::to('mmuntaner@iessonferrer.net')->send($mensaje2);
         return view('mailRecibido');
     }
 }

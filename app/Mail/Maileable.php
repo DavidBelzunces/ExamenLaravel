@@ -12,7 +12,7 @@ class Maileable extends Mailable
     use Queueable, SerializesModels;
 
 
-    public $mensaje;
+    public $mensaje = "Hola";
     /**
      * Create a new message instance.
      *
